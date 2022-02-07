@@ -50,6 +50,7 @@ class TestTriangles(unittest.TestCase):
         )
 
     def testScaleneTriangles(self):
+        # this test below is actuallly not a traingle, didn't realize that till i fixed the classifyTriangle function
         self.assertEqual(
             classifyTriangle(1, 2, 3), "Scalene", "1,2,3 should be scalene"
         )
