@@ -1,0 +1,1 @@
+[![build status of master](https://travis-ci.org/tsmith567/Triangle567.svg?branch=master)](https://travis-ci.org/frankied003/sw567/tree/master/Triangle567)
