@@ -16,9 +16,16 @@ from Triangle import classifyTriangle
 
 
 class TestTriangles(unittest.TestCase):
+    """
+    Tests for running the traiangles program
+    """
+
     # define multiple sets of tests as functions with names that begin
 
-    def testRightTriangle(self):
+    def test_right_triangle(self):
+        """
+        Testing for right triangle
+        """
         self.assertEqual(
             classifyTriangle(3, 4, 5), "Right", "3,4,5 is a Right triangle"
         )
@@ -35,7 +42,10 @@ class TestTriangles(unittest.TestCase):
             classifyTriangle(1, 5, 20), "Right", "1,5,20 is not a Right triangle"
         )
 
-    def testEquilateralTriangles(self):
+    def test_equil_triangle(self):
+        """
+        Testing for equilateral triangle
+        """
         self.assertEqual(
             classifyTriangle(1, 1, 1), "Equilateral", "1,1,1 should be equilateral"
         )
@@ -49,8 +59,10 @@ class TestTriangles(unittest.TestCase):
             classifyTriangle(3, 4, 5), "Equilateral", "3,4,5 should not be equilateral"
         )
 
-    def testScaleneTriangles(self):
-        # this test below is actuallly not a traingle, didn't realize that till i fixed the classifyTriangle function
+    def test_scalene_triangle(self):
+        """
+        Testing for equilateral triangle
+        """
         self.assertEqual(
             classifyTriangle(4, 2, 3), "Scalene", "4, 2, 3 should be scalene"
         )
@@ -64,7 +76,10 @@ class TestTriangles(unittest.TestCase):
             classifyTriangle(3, 4, 5), "Scalene", "3,4,5 should not be scalene"
         )
 
-    def testIsocelesTriangles(self):
+    def test_isoceles_triangle(self):
+        """
+        Testing for equilateral triangle
+        """
         self.assertEqual(
             classifyTriangle(1, 2, 2), "Isoceles", "1,2,2 should be Isoceles"
         )
